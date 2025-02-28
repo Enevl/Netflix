@@ -1,0 +1,751 @@
+@font-face {
+    font-family: "NFWBD";
+    src: url("./assets/Fonts/NetflixSans_W_Bd.woff2");
+}
+
+@font-face {
+    font-family: "NFWBLK";
+    src: url("./assets/Fonts/NetflixSans_W_Blk.woff2");
+}
+
+@font-face {
+    font-family: "NFWMD";
+    src: url("./assets/Fonts/NetflixSans_W_Md.woff2");
+}
+
+@font-face {
+    font-family: "NFWRG";
+    src: url("./assets/Fonts/NetflixSans_W_Rg.woff2");
+}
+
+html,
+body {
+    height: 100%;
+    background-color: black;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    background-image: url("./assets/images/InEnCover.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-width: 100vw;
+    width: 100%;
+    height: 90vh;
+    position: relative;
+}
+
+.main .box {
+    height: 90vh;
+    width: 100%;
+    opacity: 0.44;
+    background-color: black;
+    top: 0;
+    position: absolute;
+}
+
+nav {
+    max-width: 80vw;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 40px;
+    color: red;
+    position: relative;
+    z-index: 1;
+    margin: 20px 0px;
+}
+
+.trbox {
+    display: flex;
+    z-index: 1;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.trbox select option {
+    color: black;
+    font-family: "NFWRG";
+    font-weight: bold;
+    background-color: rgb(236, 223, 214);
+}
+
+.trbox select {
+    background-color: rgba(143, 143, 143, 0);
+    color: white;
+    border: 1px solid silver;
+    width: 120px;
+    background-image: url("assets/images/translate.svg"),
+        url("assets/images/arrow_down.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: left 10px center, right 8px center;
+    padding: 6px 34px 6px 36px;
+    border-radius: 5px;
+    appearance: none;
+    cursor: pointer;
+    font-family: "NFWRG";
+    font-weight: bold;
+    height: 35px;
+    cursor: pointer;
+}
+
+.signin {
+    background-color: rgb(255, 0, 0);
+    height: 24px;
+    width: auto;
+    padding: 7px 16px 3px 16px;
+    border-radius: 4px;
+    font-family: "NFWBD";
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    margin-left: 20px;
+    font-weight: 500;
+    line-height: 14px;
+}
+
+.bgtext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: calc(100% - 100px);
+    position: relative;
+    padding: 0px;
+    margin: 0;
+}
+
+.bgtext span:nth-of-type(1) {
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 75px;
+    color: white;
+    max-width: 700px;
+    text-align: center;
+    font-family: "NFWBD";
+}
+
+.bgtext span:nth-of-type(2) {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 75px;
+    color: white;
+    font-family: "NFWMD";
+}
+
+.bgtext span:nth-of-type(3) {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+    font-family: "NFWRG";
+}
+
+.getstarted {
+    all: unset;
+    display: inline-flex;
+    align-items: center;
+    height: 32px;
+    width: auto;
+    padding: 12px 24px;
+    background-color: red;
+    color: white;
+    font-family: "NFWMD";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 8px;
+}
+
+.getstarted img {
+    margin-left: 8px;
+    width: 18px;
+    height: 18px;
+    position: relative;
+}
+
+.emad {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.emad input {
+    height: 6px;
+    width: 355.359px;
+    padding: 24px 16px 24px 16px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.462);
+    display: inline-flex;
+    font-size: 18px;
+    font-family: "NFWMD";
+    font-weight: 400;
+    line-height: 24px;
+    border-radius: 5px;
+    border: 1px solid rgba(253, 250, 250, 0.5);
+}
+
+.gradient {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: radial-gradient(circle, rgb(18, 27, 65) 0%, rgba(18, 27, 65, 0.342) 80%);
+    filter: blur(15px);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.invisep {
+    margin: 20px;
+}
+
+.trendings {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0px 120px;
+    justify-content: center;
+}
+
+.trendings p {
+    color: white;
+    font-family: "NFWMD";
+    font-size: 24px;
+    font-weight: 500;
+    left: -20px;
+    position: relative;
+}
+
+.boxes {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 10px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.boxes::-webkit-scrollbar {
+    display: none;
+}
+
+.theimg {
+    position: relative;
+    flex: 0 0 auto;
+    counter-increment: image-counter;
+    min-width: calc(100% / 7);
+    position: relative;
+}
+
+
+.theimg img {
+    display: flex;
+    height: auto;
+    max-width: 180px;
+    width: 100%;
+    padding: 8px 22px;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+    /* border-radius: 15%; */
+}
+
+.theimg:before {
+    content: counter(image-counter);
+    position: absolute;
+    left: -3px;
+    top: 130px;
+    z-index: 1;
+    font-weight: 700;
+    font-size: 100px;
+    -webkit-text-stroke: 2.5px;
+    -webkit-text-stroke-color: rgb(238, 233, 233);
+    color: black;
+    font-family: "NFWBD";
+    opacity: 0.5;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.theimg:hover:before {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.theimg img:hover {
+    transform: scale(1.1);
+}
+
+.invibtnbox {
+    height: 268px;
+    width: 24px;
+    display: inline-flex;
+    top: 150px;
+    right: 80px;
+    position: absolute;
+}
+
+.btn {
+    height: 120px;
+    width: 24px;
+    background-color: rgb(26, 26, 26);
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    background-color: rgb(65, 63, 63);
+}
+
+
+@media (max-width: 1200px) {
+    .theimg {
+        min-width: calc(100% / 6);
+    }
+}
+
+@media (max-width: 992px) {
+    .theimg {
+        min-width: calc(100% / 5);
+    }
+}
+
+
+@media (max-width: 600px) {
+    .faq-title {
+        font-size: 24px;
+    }
+
+    .faq-label {
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    .faq-label::after {
+        font-size: 24px;
+    }
+
+    .faq-content {
+        font-size: 16px;
+        padding: 0 15px;
+    }
+
+    input[type="checkbox"]:checked~.faq-content {
+        padding: 10px 20px;
+    }
+
+    .theimg {
+        min-width: calc(100% / 3);
+    }
+}
+
+@media (max-width: 480px) {
+    .theimg {
+        min-width: calc(100% / 2);
+    }
+
+    .theimg:before {
+        top: 20px;
+        font-size: 30px;
+    }
+
+    .emad {
+        flex-direction: column;
+    }
+
+    .getstarted {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 320px) {
+    .theimg {
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 530px) {
+    .one {
+        margin-left: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .more {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gradient-box {
+        max-width: 90%;
+        text-align: center;
+    }
+
+    .icon {
+        align-self: center;
+    }
+
+    .theimg {
+        min-width: calc(100% / 5);
+    }
+
+    .theimg:before {
+        top: 40px;
+        font-size: 40px;
+    }
+
+    .boxes {
+        overflow-x: scroll;
+    }
+
+    .trbox select {
+        height: 25px;
+        width: 5px;
+        font-size: 10px;
+        padding: 6px 30px 6px 30px;
+    }
+
+    .signin {
+        height: 17px;
+        font-size: 13.8px;
+    }
+
+    .bgtext span:nth-of-type(1) {
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 40px;
+        color: white;
+        max-width: 900px;
+        text-align: center;
+        font-family: "NFWBD";
+    }
+
+    .bgtext span:nth-of-type(2) {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 75px;
+        color: white;
+        font-family: "NFWMD";
+    }
+
+    .bgtext span:nth-of-type(3) {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: white;
+        font-family: "NFWRG";
+        text-align: center;
+    }
+
+    .logo {
+        height: 30px;
+        width: 100px;
+    }
+
+    .emad input {
+        height: 20px;
+        width: 200px;
+        /* padding: 8px 16px 24px 16px; */
+    }
+
+    .sep-container {
+        top: 10px;
+        position: relative;
+    }
+
+    .gradient {
+        top: 50%;
+    }
+
+    .getstarted {
+        font-size: 16px;
+        width: auto;
+        /* padding: 12px 16px; */
+    }
+
+    .getstarted img {
+        margin-left: -3px;
+    }
+
+    .emad {
+        flex-direction: column;
+    }
+
+    .emad input {
+        height: 1px;
+        width: 70vw;
+        margin: 16px;
+    }
+
+    .trendings {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding: 0px 30px;
+        justify-content: center;
+    }
+
+    .trendings p {
+        color: white;
+        font-family: "NFWMD";
+        font-size: 20px;
+        font-weight: 500;
+        left: -10px;
+        position: relative;
+    }
+
+    .boxes {
+        display: flex;
+        justify-content: center;
+        gap: 1px;
+        position: relative;
+    }
+
+    .theimg:before {
+        left: -3px;
+        top: 85px;
+        font-size: 60px;
+    }
+
+    .theimg img {
+        height: auto;
+        width: 112px;
+    }
+
+    .xx {
+        display: none;
+    }
+
+    .invibtnbox {
+        top: 90px;
+        right: 10px;
+    }
+
+}
+
+.more {
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+    font-family: "NFWMD";
+}
+
+.moredes {
+    height: 274px;
+    width: 380px;
+    max-width: 80%;
+    background-color: rgb(25, 33, 68);
+    border: 10px;
+    border-radius: 20px;
+}
+
+#moreview {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: start;
+    margin-bottom: 20px;
+    color: white;
+    margin-left: 45px;
+    font-family: "NFWRG";
+}
+
+.more {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 100vw;
+    font-family: "NFWMD";
+}
+
+.gradient-box {
+    flex: 1;
+    min-width: 80px;
+    max-width: 330px;
+    height: auto;
+    padding: 20px;
+    border-radius: 15px;
+    background: linear-gradient(-0deg, #3634be31, #471e12bd);
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.gradient-box span:nth-of-type(1) {
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-family: "NFWMD";
+}
+
+.gradient-box span:nth-of-type(2) {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: "NFWMD";
+}
+
+.icon {
+    align-self: flex-end;
+    margin-top: auto;
+}
+
+@media (max-width: 370px) {
+    .signin {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 360px) {
+    .signin {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 350px) {
+    .signin {
+        font-size: 7px;
+    }
+}
+
+.endcont span {
+    color: #ccc;
+    font-family: "NFWMD";
+    ;
+}
+
+.detailsview {
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: "NFWRG";
+}
+
+.last {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 70vw;
+    margin: auto;
+    padding: 20px;
+    color: white;
+}
+
+.last div {
+    width: 22%;
+    min-width: 150px;
+}
+
+.last span {
+    display: block;
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-family: "NFWMD";
+}
+
+.last span:hover {
+    text-decoration: underline;
+}
+
+.endcont {
+    text-align: left;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 10px;
+    max-width: 80vw;
+    margin: auto;
+}
+
+.NI {
+    margin-top: 30px;
+    color: #ccc;
+    font-family: "NFWMD";
+    font-size: 30px;
+    padding: 2px;
+}
+
+.faq-container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 800px;
+    /* width: 100%; */
+}
+
+.faq-title {
+    align-self: flex-start;
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: "NFWBD";
+}
+
+.faq-item {
+    background-color: #2a2a2a;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.faq-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    font-size: 24px;
+    font-weight: 400;
+    cursor: pointer;
+    font-family: "NFWRG";
+    background-color: #333;
+}
+
+.faq-label::after {
+    content: "+";
+    font-size: 24px;
+    transition: transform 0.3s ease;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked+.faq-label::after {
+    content: "×";
+}
+
+.faq-content {
+    max-height: 0;
+    padding: 0 20px;
+    font-size: 16px;
+    color: #ccc;
+    overflow: hidden;
+    font-family: "NFWRG";
+    transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+
+input[type="checkbox"]:checked~.faq-content {
+    max-height: 200px;
+    padding: 10px 20px;
+}
