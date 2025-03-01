@@ -4,6 +4,7 @@ Welcome to my **Netflix UI Clone**! This is a simple HTML/CSS project that repli
 
 ## 🚀 Live Demo
 Check out the live demo here: **[Netflix UI Clone](https://enevl.github.io/Netflix/)**
+> Oh no, Google thinks my site is *dangerous*! 🤡 Apparently, my **evil** master plan is to deceive users into installing malware... using **HTML and CSS**! 😂 Yeah, because everyone knows `<div>` tags are the ultimate hacking tool. Poor AI, try harder next time. 🤦‍♂️
 
 ---
 
